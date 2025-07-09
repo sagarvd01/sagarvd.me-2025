@@ -5,10 +5,10 @@ html{
     display: block;
     max-width: 2100px;
     margin: 0 auto;
-    scrollbar-width: none;        /* Firefox */
+    scrollbar-width: none;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
-        display: none;                /* Chrome, Safari, Edge */
+        display: none;
     }
 }
 body{
@@ -18,11 +18,11 @@ body{
     font-style: normal;
     flex-wrap: wrap;
     background-color: #000 !important;
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-        display: none;                /* Chrome, Safari, Edge */
-    }
+    /* scrollbar-width: none;*/
+    /* -ms-overflow-style: none; */
+    /* &::-webkit-scrollbar {
+        display: none;*/
+    /*} */
     /* max-width: 1400px;
     align-items: center; */
 }
@@ -37,12 +37,12 @@ body{
     /* border-radius: 0px 20px 20px 0px; */
     justify-items: center;
     position: relative;
-    overflow-y: auto;
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-        display: none;                /* Chrome, Safari, Edge */
-    }
+    /* overflow-y: auto; */
+    /* scrollbar-width: none; */
+    /* -ms-overflow-style: none; */
+    /* &::-webkit-scrollbar {
+        display: none;
+    } */
     &::before{
         content: '';
         position: absolute;
@@ -158,10 +158,10 @@ body{
             max-height: calc( 100vh - 270px );
             /* padding-bottom: 20px; */
             overflow-y: auto;
-            scrollbar-width: none;        /* Firefox */
+            scrollbar-width: none;
             -ms-overflow-style: none;
             &::-webkit-scrollbar {
-                display: none;                /* Chrome, Safari, Edge */
+                display: none;
             }
             .experience-lists{
                 .intro-section{
@@ -189,10 +189,10 @@ body{
             padding-bottom: 20px;
             max-height: calc( 100vh - 270px );
             overflow-y: auto;
-            scrollbar-width: none;        /* Firefox */
+            scrollbar-width: none;
             -ms-overflow-style: none;
             &::-webkit-scrollbar {
-                display: none;                /* Chrome, Safari, Edge */
+                display: none;
             }
             .projects-list{
                 margin-top: 50px;
