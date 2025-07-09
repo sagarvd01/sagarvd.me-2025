@@ -165,6 +165,7 @@ body{
             max-height: calc( 100vh - 270px );
             overflow-y: auto;
             scrollbar-width: none;        /* Firefox */
+            margin-bottom: 20px;
             -ms-overflow-style: none;
             &::-webkit-scrollbar {
                 display: none;                /* Chrome, Safari, Edge */
