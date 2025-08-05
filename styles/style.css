@@ -78,7 +78,7 @@ body{
         margin: auto 20px;
         color: #fff8;
     }
-    .education, .contact{
+    .education, .contact, .cv-download{
         width: calc(100% - 40px);
         color: #fffb;
         margin-top: 40px;
@@ -87,6 +87,10 @@ body{
             width: fit-content;
             cursor: pointer;
             margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            box-shadow: #000;
         }
     }
     .footer-pc{
