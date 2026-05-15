@@ -1,10 +1,34 @@
-User-agent: facebookexternalhit 
-Disallow:
-
-User-agent: Googlebot
-Disallow:
-
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://sagarvd.me/sitemap.xml
+# LLM crawlers — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.sagarvd.me/sitemap.xml
+
+# LLM context files
+# https://www.sagarvd.me/llms.txt
+# https://www.sagarvd.me/llms-full.txt

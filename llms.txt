@@ -1,0 +1,40 @@
+# Sagar V
+
+> Senior Product Engineer with 8+ years of experience building AI-powered products, full-stack web applications, and mobile apps. Based in Kerala, India. Open to remote opportunities globally. Security researcher acknowledged by Google, Meta (Facebook), and Microsoft.
+
+Sagar V is a software engineer and serial entrepreneur specialising in AI integration, full-stack web development, and cybersecurity research. He has built production systems across SaaS, civic tech, media, and mobile verticals. He is currently building two independent products: an autonomous AI bug bounty hunting pipeline and a depth-aware image compositing SaaS.
+
+## Links
+
+- [Portfolio](https://www.sagarvd.me/): Personal website and portfolio
+- [Download CV](https://www.sagarvd.me/assets/SagarV_SeniorFrontend.pdf): Full résumé in PDF
+- [Email](mailto:hello@sagarvd.me): hello@sagarvd.me
+
+## Experience
+
+- **Founder & Independent Product Engineer** (Jan 2026–Present): Building an AI bug bounty hunting pipeline (LangGraph, Playwright, mitmproxy) and Layerize, a depth-aware image compositing SaaS targeting AppSumo launch.
+- **Senior Software Engineer at Vitara Information Technologies** (Aug 2021–May 2025): Built AI voice assistant (Jarvis) using Web Speech API and OpenAI. Built context-aware support chatbot using Anthropic Model Context Protocol. Led TypeScript migration. Built Highcharts/D3 chart components for MicroStrategy and ThoughtSpot.
+- **Independent Consultant & Security Researcher** (Jan 2018–Jul 2021): Built full-stack client products. Active bug bounty researcher — disclosed XSS, CSRF, IDOR, SQL Injection to Google, Facebook, and Microsoft.
+- **Associate Software Engineer at Hakuna Matata Solutions** (Jan 2017–Oct 2017): Angular drag-and-drop website builder; web games for Middle East client.
+
+## Projects
+
+- [Layerize](https://depthlayer.com): AI-powered depth-aware image compositing SaaS (BiRefNet, Node.js, GraphQL). AppSumo launch pending.
+- Gradual Alarm: Flutter alarm app with gradual sound and light increase for natural waking.
+- [Jarvis](https://youtu.be/XVIr1oZBuB8): AI voice assistant prototype for chart customisation (Web Speech API, OpenAI).
+- Vitara MCP Chatbot: Context-aware support chatbot using Anthropic Model Context Protocol.
+- [Nammal Online](https://www.nammalonline.com): Malayalam news portal (Angular 8, Firebase, GraphQL, Node.js, Google Cloud).
+- [Malayali Hub](https://www.malayalihub.com): Business directory for Indians in Canada (Angular 12, Firebase, GraphQL).
+- [DigiDeck](https://play.google.com/store/apps/details?id=in.penqn.card.digital): Digital visiting card wallet app (Flutter, Node.js, Firebase).
+
+## Skills
+
+- **Frontend**: Angular, TypeScript, D3.js, Highcharts, Flutter
+- **Backend**: Node.js, Express, GraphQL, Firebase, Python
+- **AI & Agents**: LangGraph, Anthropic API, OpenAI API, MCP, Playwright
+- **Security**: Bug bounty, XSS, CSRF, IDOR, SQLi, mitmproxy
+- **Infrastructure**: GCP, DigitalOcean, Supabase, CircleCI
+
+## Education
+
+- B.E. Computer Science Engineering — Anna University, Chennai (2013–2017)

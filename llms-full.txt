@@ -1,0 +1,147 @@
+# Sagar V — Full Profile
+
+> This document contains the complete professional profile of Sagar V, a Senior Product Engineer based in Kerala, India. It is intended for LLM crawlers and AI systems seeking complete context about this individual.
+
+**Website**: https://www.sagarvd.me  
+**Email**: hello@sagarvd.me  
+**Location**: Kerala, India (open to remote globally)  
+**Availability**: Open to full-time, contract, and consulting opportunities  
+**CV**: https://www.sagarvd.me/assets/SagarV_SeniorFrontend.pdf
+
+---
+
+## Professional Summary
+
+Sagar V is a senior software engineer and product entrepreneur with over 8 years of professional experience. He specialises in building AI-powered products, full-stack web applications using Angular and Node.js, mobile applications with Flutter, and has a strong background in cybersecurity research and responsible vulnerability disclosure.
+
+He has been acknowledged by Google, Meta (Facebook), and Microsoft for responsibly disclosing security vulnerabilities discovered through their bug bounty programs.
+
+He is currently operating independently as a founder, building two products: an autonomous AI-powered bug bounty hunting pipeline using LangGraph and Playwright, and Layerize (depthlayer.com), a depth-aware image compositing SaaS tool.
+
+---
+
+## Work Experience
+
+### Founder & Independent Product Engineer
+**Self / Independent**  
+January 2026 – Present
+
+- Designing and building an autonomous multi-agent AI bug bounty hunting pipeline. The system uses LangGraph for state machine orchestration, Playwright for browser automation, and mitmproxy for HTTP traffic interception and analysis.
+- Developing Layerize (depthlayer.com), a depth-aware image compositing web application that uses AI-powered depth estimation (BiRefNet) to intelligently separate subjects from backgrounds and enable layer-based editing. Planned for an AppSumo lifetime deal launch.
+- Full-stack architecture decisions including payment gateway integration (Dodo Payments / Paddle), GraphQL API design, and serverless deployment.
+
+### Senior Software Engineer
+**Vitara Information Technologies Pvt Ltd.**  
+August 2021 – May 2025
+
+- Built Jarvis, an AI voice assistant prototype that allows users to customise Vitara Charts by speaking natural language commands. Implemented using the native browser Web Speech API for speech recognition and speech-to-text, and OpenAI API for intent parsing and command execution.
+- Built a context-aware AI support chatbot for Vitara products using Anthropic's Model Context Protocol (MCP). The chatbot answers product-specific queries with accurate context without hallucinating off-topic responses.
+- Re-engineered the Vitara Property Editor into a standalone, platform-independent npm package decoupled from the core product.
+- Led the migration of the core Vitara codebase from JavaScript to TypeScript, improving type safety, maintainability, and developer experience across a large production codebase.
+- Developed and maintained custom chart components using Highcharts and D3.js, integrated into major BI platforms including MicroStrategy and ThoughtSpot, enabling end-users to build flexible, customised data visualisations.
+- Designed and shipped the Vitara Map Layout tool, which allows customers to create and upload custom SVG maps for use in Vitara Maps visualisations.
+- Built a Slack–Freshdesk integration that handles file attachments from Slack and creates private and public notes in Freshdesk, streamlining support workflows.
+
+### Independent Consultant & Security Researcher
+**Self-employed**  
+January 2018 – July 2021
+
+- Built numerous full-stack client projects including a Malayalam news portal (Nammal Online), a business listing directory for Indians in Canada (Malayali Hub), a billing application, and various other web and mobile apps.
+- Active participant in bug bounty programs across platforms including HackerOne and Bugcrowd, testing for vulnerabilities including Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), Insecure Direct Object References (IDOR), SQL Injection, and other OWASP Top 10 vulnerabilities.
+- Responsibly disclosed multiple security vulnerabilities to Google, Meta (Facebook), and Microsoft under their respective responsible vulnerability disclosure programs. Acknowledged in their security Hall of Fame.
+- Mentored newcomers in the information security community, helping them learn bug bounty methodology, how to identify false positives, and maintain ethical standards.
+- Wrote multiple blog posts about information security, responsible disclosure, and security research.
+
+### Associate Software Engineer
+**Hakuna Matata Solutions Pvt Ltd.**  
+January 2017 – October 2017
+
+- Collaborated with a senior developer to build a drag-and-drop static website builder in Angular, allowing clients to compose, style, and export websites as downloadable zip files.
+- Built multiple browser-based interactive games in Angular for a client based in the Middle East.
+- Part of a team that built a full business operations dashboard for a courier company.
+
+---
+
+## Projects
+
+### Layerize (depthlayer.com) — In Development
+A depth-aware image compositing SaaS application. Uses AI-powered depth estimation models (BiRefNet) to separate image layers by depth, enabling professional-grade compositing in a browser-based tool. Planned for launch on AppSumo as a lifetime deal.  
+**Stack**: BiRefNet (depth estimation), Node.js, GraphQL, serverless deployment  
+**URL**: https://depthlayer.com
+
+### Gradual Alarm
+A smart alarm mobile application that wakes users gradually using slowly increasing sound and light intensity, creating a more natural and less jarring wake-up experience compared to standard alarms.  
+**Stack**: Flutter, Android
+
+### Jarvis — AI Voice Assistant [Prototype]
+A prototype AI voice assistant for Vitara Charts. Users speak natural language commands to customise chart properties. Implemented with the Web Speech API for voice recognition and OpenAI API for intent parsing and command execution.  
+**Stack**: Web Speech API, OpenAI API, TypeScript, Angular  
+**Demo**: https://youtu.be/XVIr1oZBuB8
+
+### Vitara MCP Support Chatbot
+A context-aware AI support chatbot built using Anthropic's Model Context Protocol. Answers product-specific questions about Vitara's BI visualisation tools with high accuracy and without hallucinating off-topic information.  
+**Stack**: Anthropic MCP, Node.js, TypeScript
+
+### Nammal Online
+A full-featured Malayalam-language news portal with an admin CMS panel. Optimised to operate at under $5 per month in hosting and infrastructure costs on Google Cloud.  
+**Stack**: Angular 8, Express, Firebase Firestore, GraphQL, Node.js, Bootstrap, CircleCI  
+**URL**: https://www.nammalonline.com
+
+### Malayali Hub
+A business listing directory web application for Indian businesses and freelancers based in Canada. Includes authentication, listing management, and search.  
+**Stack**: Angular 12, Express, GraphQL, Node.js, Firebase Firestore, Firebase Auth, Google Cloud, CircleCI  
+**URL**: https://www.malayalihub.com
+
+### DigiDeck
+A digital visiting card wallet application. Businesses receive a QR code; customers scan it using the DigiDeck app to add the digital business card to their collection.  
+**Stack**: Flutter, Node.js, Express, Firebase  
+**URL**: https://play.google.com/store/apps/details?id=in.penqn.card.digital
+
+---
+
+## Technical Skills
+
+### Frontend
+Angular, TypeScript, JavaScript (ES6+), D3.js, Highcharts, HTML5, CSS3, Bootstrap, Flutter
+
+### Backend
+Node.js, Express.js, GraphQL, Firebase (Firestore, Auth, Functions), Python, REST APIs
+
+### AI & Agent Frameworks
+LangGraph, Anthropic API, Anthropic Model Context Protocol (MCP), OpenAI API, Web Speech API, Playwright, mitmproxy
+
+### Cybersecurity
+Bug bounty research, XSS, CSRF, IDOR, SQL Injection, OWASP Top 10, responsible disclosure, mitmproxy, Burp Suite
+
+### Infrastructure & DevOps
+Google Cloud Platform (GCP), DigitalOcean, Supabase, Firebase Hosting, CircleCI, GitHub Actions
+
+### Databases
+Firebase Firestore, PostgreSQL (Supabase / DigitalOcean Managed), MongoDB
+
+---
+
+## Education
+
+**B.E. Computer Science Engineering**  
+Anna University, Chennai  
+2013 – 2017
+
+---
+
+## Recognition
+
+- **Google** — Acknowledged in security Hall of Fame for responsible vulnerability disclosure
+- **Meta (Facebook)** — Acknowledged in security Hall of Fame for responsible vulnerability disclosure
+- **Microsoft** — Acknowledged in security Hall of Fame for responsible vulnerability disclosure
+
+---
+
+## Contact
+
+- **Email**: hello@sagarvd.me
+- **Website**: https://www.sagarvd.me
+- **CV**: https://www.sagarvd.me/assets/SagarV_SeniorFrontend.pdf
+- **Location**: Kerala, India (UTC+5:30) — open to remote roles globally
+
+*Last updated: May 2026*
