@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Sagar V. - Senior Angular Developer</title>
+	<link href="https://fonts.googleapis.com" rel="preconnect" />
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					colors: {
+						"primary": "#2563eb", // Royal Blue
+						"background-light": "#f8fafc", // Slate 50
+						"background-dark": "#0f172a", // Slate 900
+						"surface-dark": "#1e293b", // Slate 800
+						"surface-light": "#ffffff",
+					},
+					fontFamily: {
+						"display": ["Manrope", "sans-serif"]
+					},
+					borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+				},
+			},
+		}
+	</script>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Manrope', sans-serif;
+		}
+
+		.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+		}
+
+		.scrollbar-hide {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+
+		::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: #f1f5f9;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #cbd5e1;
+			border-radius: 4px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: #2563eb;
+		}
+	</style>
+</head>
+
+<body class="bg-background-light text-slate-900 overflow-x-hidden font-display">
+	<nav
+		class="sticky top-0 z-50 w-full border-b border-solid border-slate-200 bg-background-light/90 backdrop-blur-md px-6 py-3">
+		<div class="max-w-[960px] mx-auto flex items-center justify-between">
+			<!-- <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+				<div class="size-8 text-primary">
+					<span class="material-symbols-outlined text-3xl">terminal</span>
+				</div>
+			</div> -->
+			<div class="hidden md:flex items-center gap-8">
+				<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+					href="#about">About</a>
+				<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+					href="#skills">Skills</a>
+				<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+					href="#projects">Projects</a>
+				<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+					href="#contact">Contact</a>
+			</div>
+			<div class="flex items-center gap-4">
+				<a class="hidden sm:flex h-10 cursor-pointer items-center justify-center rounded-full bg-primary px-5 text-white text-sm font-bold transition-transform hover:scale-105 shadow-md shadow-blue-500/20"
+					href="#contact">
+					<span class="truncate">Let's Talk</span>
+				</a>
+				<button class="md:hidden flex items-center justify-center p-2 text-slate-900">
+					<span class="material-symbols-outlined">menu</span>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<main class="flex flex-col items-center w-full">
+		<div class="w-full max-w-[960px] flex flex-col px-4 md:px-0">
+			<section class="py-12 md:py-20 @container" id="hero">
+				<div class="flex flex-col-reverse gap-8 md:gap-12 md:flex-row items-center">
+					<div class="flex flex-col gap-6 flex-1 text-center md:text-left items-center md:items-start">
+						<div class="flex flex-col gap-2">
+							<h1
+								class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] text-slate-900">
+								Hi, I'm <span class="text-primary">Sagar!</span>
+							</h1>
+							<h2 class="text-base md:text-lg font-normal text-slate-600 max-w-lg">
+								Senior Angular Developer specializing in scalable architecture, state management, and
+								high-performance web applications.
+							</h2>
+						</div>
+						<div class="flex gap-4">
+							<a class="h-12 px-6 flex items-center justify-center rounded-full bg-primary text-white font-bold text-base transition-transform hover:scale-105 shadow-lg shadow-blue-500/25"
+								href="#projects">
+								View My Work
+							</a>
+							<a class="h-12 px-6 flex items-center justify-center rounded-full bg-white border border-slate-200 text-slate-900 font-bold text-base hover:bg-slate-50 transition-colors"
+								href="#contact">
+								Contact Me
+							</a>
+						</div>
+					</div>
+					<div class="w-64 h-64 md:w-80 md:h-80 shrink-0 relative">
+						<div class="absolute inset-0 rounded-full bg-primary/10 blur-2xl"></div>
+						<div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl bg-center bg-cover"
+							data-alt="Portrait of a smiling professional man in a tech environment"
+							style='background-image: url("./assets/face.webp");'>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-10 scroll-mt-20" id="about">
+				<div
+					class="flex flex-col md:flex-row gap-8 bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm">
+					<div class="flex-1 flex flex-col gap-4">
+						<div class="flex items-center gap-3 mb-2">
+							<span class="material-symbols-outlined text-primary text-3xl">person</span>
+							<h2 class="text-2xl font-bold text-slate-900">About Me</h2>
+						</div>
+						<p class="text-base leading-relaxed text-slate-600">
+							I am a passionate software engineer with over 8 years of experience building complex web
+							applications. My journey started with pure JavaScript, but I quickly fell in love with the
+							structure and scalability of <strong>Angular</strong>.
+						</p>
+						<p class="text-base leading-relaxed text-slate-600">
+							Currently, I specialize in complex frontend architecture, reactive state management using
+							<strong>NgRx</strong> and <strong>Akita</strong>, and rigorous performance optimization. I
+							believe in writing clean, maintainable code that turns complex business requirements into
+							seamless user experiences.
+						</p>
+						<div class="flex gap-6 mt-4 pt-4 border-t border-slate-100">
+							<div>
+								<p class="text-3xl font-bold text-primary">8+</p>
+								<p class="text-xs uppercase tracking-wider text-slate-500">Years Exp.</p>
+							</div>
+							<div>
+								<p class="text-3xl font-bold text-primary">50+</p>
+								<p class="text-xs uppercase tracking-wider text-slate-500">Projects</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-10 scroll-mt-20" id="skills">
+				<h2 class="text-2xl font-bold mb-6 px-2 border-l-4 border-primary pl-4 text-slate-900">Technical Arsenal
+				</h2>
+				<div class="grid gap-8">
+					<div>
+						<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4 px-2">Core
+							Technologies</h3>
+						<div class="flex flex-wrap gap-3">
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">code</span>
+								<p class="text-sm font-bold">Angular 17+</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">data_object</span>
+								<p class="text-sm font-bold">TypeScript</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">javascript</span>
+								<p class="text-sm font-bold">JavaScript (ES6+)</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">html</span>
+								<p class="text-sm font-bold">HTML5 &amp; CSS3</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4 px-2">State &amp;
+							Architecture</h3>
+						<div class="flex flex-wrap gap-3">
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">sync_alt</span>
+								<p class="text-sm font-bold">RxJS</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">account_tree</span>
+								<p class="text-sm font-bold">NgRx</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">schema</span>
+								<p class="text-sm font-bold">Akita</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">architecture</span>
+								<p class="text-sm font-bold">Micro-frontends</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4 px-2">Tools &amp;
+							Testing</h3>
+						<div class="flex flex-wrap gap-3">
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">brush</span>
+								<p class="text-sm font-bold">Tailwind CSS</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">bug_report</span>
+								<p class="text-sm font-bold">Jest</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">check_circle</span>
+								<p class="text-sm font-bold">Cypress</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">build</span>
+								<p class="text-sm font-bold">Webpack</p>
+							</div>
+							<div
+								class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-slate-100 px-5 hover:bg-primary/10 hover:text-primary transition-colors cursor-default border border-slate-200/50">
+								<span class="material-symbols-outlined text-lg">cloud</span>
+								<p class="text-sm font-bold">AWS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-16 scroll-mt-20 overflow-visible relative group/carousel" id="projects">
+				<div class="flex justify-between items-end mb-8 px-2 md:px-0">
+					<h2 class="text-2xl font-bold border-l-4 border-primary pl-4 text-slate-900">Featured Projects</h2>
+					<a class="text-primary text-sm font-bold hover:underline hidden sm:block" href="#">View GitHub
+						-&gt;</a>
+				</div>
+				<div class="relative">
+					<button aria-label="Previous project"
+						class="absolute -left-5 md:-left-12 top-1/2 -translate-y-1/2 z-20 size-14 flex items-center justify-center rounded-full bg-white shadow-xl text-slate-700 hover:text-primary hover:scale-110 transition-all border border-slate-200 opacity-80 md:opacity-100 group-hover/carousel:opacity-100 focus:opacity-100">
+						<span class="material-symbols-outlined text-3xl">chevron_left</span>
+					</button>
+					<div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-8 px-1 scroll-pl-1">
+						<div
+							class="group snap-center shrink-0 w-[85vw] md:w-[300px] lg:w-[310px] h-[380px] relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-slate-900 border border-slate-800">
+							<img alt="FinTech Dashboard"
+								class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqAnfpOYR7w_IeUZA-0j5MurLCfs-VWJVUvJfugnB0tS5bKwjxH4UVxhouiQmKCylf6e-wlHelkNRMVdx4ILNjSaK_pCaV_muTXD-UB8VARQjBdFf3Z_FjsVX2Lr9XzUjWf23roR_Rj_Mp2PmeAK0PBtm-GfZkv7gonn7N_JaPZoRIRpYUPN7fo01DuBJnHw0cF7KYLkXgQClsqfAxvmj2T0kMaTaLmy_O1pYMJSR8uNLuTFEt4fsFTyVjwy4IYgblNxsYpO44nQY" />
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+							</div>
+							<div class="absolute inset-0 p-6 flex flex-col justify-end">
+								<h3
+									class="text-xl font-bold text-white mb-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+									FinTech Dashboard</h3>
+								<p
+									class="text-slate-300 mb-4 line-clamp-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 text-sm">
+									Real-time financial analytics with WebSocket data updates using RxJS and NgRx Entity
+									for high performance.
+								</p>
+								<div class="flex gap-2 mb-4">
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Angular
+										16</span>
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">D3.js</span>
+								</div>
+								<a class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm text-center transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group-hover:translate-y-0 translate-y-2"
+									href="#">
+									<span>Visit Site</span>
+									<span class="material-symbols-outlined text-base">arrow_outward</span>
+								</a>
+							</div>
+						</div>
+						<div
+							class="group snap-center shrink-0 w-[85vw] md:w-[300px] lg:w-[310px] h-[380px] relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-slate-900 border border-slate-800">
+							<img alt="ShopScale"
+								class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGewsSyVBIhaJErmYoZmV44GkxZbah5vuxzPD20oEdapfoz3dNBY7sHT2XnJmFMbMyiNz5jTUKxUok3coliCZ9AF3hD1KLRn5K7Se76xsRGsQzm8Q8L-OkazXb249u2Dvgmjz7jViJTM4Yka7zhh-V3qW34LUJH-EW5GBr1oYZ3iw5jdEyDyjYqwHrF4X41TeEb3wLt1wyuARi6AssPshX9W8-c7RE9ftrbqAYAfHuWTFnKzdOWz7PmVTge5rS-RsHXGDG7Qz5bPI" />
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+							</div>
+							<div class="absolute inset-0 p-6 flex flex-col justify-end">
+								<h3
+									class="text-xl font-bold text-white mb-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+									ShopScale E-commerce</h3>
+								<p
+									class="text-slate-300 mb-4 line-clamp-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 text-sm">
+									Enterprise e-commerce platform featuring micro-frontend architecture for independent
+									team deployments.
+								</p>
+								<div class="flex gap-2 mb-4">
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Akita</span>
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Micro-frontends</span>
+								</div>
+								<a class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm text-center transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group-hover:translate-y-0 translate-y-2"
+									href="#">
+									<span>Visit Site</span>
+									<span class="material-symbols-outlined text-base">arrow_outward</span>
+								</a>
+							</div>
+						</div>
+						<div
+							class="group snap-center shrink-0 w-[85vw] md:w-[300px] lg:w-[310px] h-[380px] relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-slate-900 border border-slate-800">
+							<img alt="TaskMaster Pro"
+								class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMrHz1J-uPcJfmwZFN6Eofsu75M_1JHibciGWFdB7oE4bQ9nRWvSkWwkY_DtOgcUILDOO4ilil3SV0qrdxEWKVEfb8KH5nhoHqeGsWbd2KDU9FyqhNef065B62BmTXVoaryS3UOf8tPJkdy3r0GNhqCes3_m7XX1HRs23czksVM1e6vkA9aAUZrK-6O_QdI-ZH0SluFGrWGQmzbD_TF3i7-_cKO6yYdhJ_OsxC599ubHPcweCNMAs1KrRPazvdRJX6pM4YICEt-U" />
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+							</div>
+							<div class="absolute inset-0 p-6 flex flex-col justify-end">
+								<h3
+									class="text-xl font-bold text-white mb-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+									TaskMaster Pro</h3>
+								<p
+									class="text-slate-300 mb-4 line-clamp-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 text-sm">
+									Collaborative task management tool with offline capabilities utilizing PWA service
+									workers and IndexedDB.
+								</p>
+								<div class="flex gap-2 mb-4">
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">PWA</span>
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Firebase</span>
+								</div>
+								<a class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm text-center transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group-hover:translate-y-0 translate-y-2"
+									href="#">
+									<span>Visit Site</span>
+									<span class="material-symbols-outlined text-base">arrow_outward</span>
+								</a>
+							</div>
+						</div>
+						<div
+							class="group snap-center shrink-0 w-[85vw] md:w-[300px] lg:w-[310px] h-[380px] relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-slate-900 border border-slate-800">
+							<div class="absolute inset-0 w-full h-full bg-slate-800">
+								<img alt="CryptoView"
+									class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 mix-blend-luminosity"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqAnfpOYR7w_IeUZA-0j5MurLCfs-VWJVUvJfugnB0tS5bKwjxH4UVxhouiQmKCylf6e-wlHelkNRMVdx4ILNjSaK_pCaV_muTXD-UB8VARQjBdFf3Z_FjsVX2Lr9XzUjWf23roR_Rj_Mp2PmeAK0PBtm-GfZkv7gonn7N_JaPZoRIRpYUPN7fo01DuBJnHw0cF7KYLkXgQClsqfAxvmj2T0kMaTaLmy_O1pYMJSR8uNLuTFEt4fsFTyVjwy4IYgblNxsYpO44nQY" />
+							</div>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+							</div>
+							<div class="absolute inset-0 p-6 flex flex-col justify-end">
+								<h3
+									class="text-xl font-bold text-white mb-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+									CryptoView Analytics</h3>
+								<p
+									class="text-slate-300 mb-4 line-clamp-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 text-sm">
+									A decentralized finance tracking dashboard integrating Web3 wallet connections and
+									real-time block scanning.
+								</p>
+								<div class="flex gap-2 mb-4">
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Web3.js</span>
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Angular</span>
+								</div>
+								<a class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm text-center transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group-hover:translate-y-0 translate-y-2"
+									href="#">
+									<span>Visit Site</span>
+									<span class="material-symbols-outlined text-base">arrow_outward</span>
+								</a>
+							</div>
+						</div>
+						<div
+							class="group snap-center shrink-0 w-[85vw] md:w-[300px] lg:w-[310px] h-[380px] relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-slate-900 border border-slate-800">
+							<div class="absolute inset-0 w-full h-full bg-slate-800">
+								<img alt="HealthConnect"
+									class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 mix-blend-overlay"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGewsSyVBIhaJErmYoZmV44GkxZbah5vuxzPD20oEdapfoz3dNBY7sHT2XnJmFMbMyiNz5jTUKxUok3coliCZ9AF3hD1KLRn5K7Se76xsRGsQzm8Q8L-OkazXb249u2Dvgmjz7jViJTM4Yka7zhh-V3qW34LUJH-EW5GBr1oYZ3iw5jdEyDyjYqwHrF4X41TeEb3wLt1wyuARi6AssPshX9W8-c7RE9ftrbqAYAfHuWTFnKzdOWz7PmVTge5rS-RsHXGDG7Qz5bPI" />
+							</div>
+							<div
+								class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+							</div>
+							<div class="absolute inset-0 p-6 flex flex-col justify-end">
+								<h3
+									class="text-xl font-bold text-white mb-1.5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+									HealthConnect Portal</h3>
+								<p
+									class="text-slate-300 mb-4 line-clamp-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75 text-sm">
+									HIPAA-compliant patient management system featuring secure document handling and
+									telemedicine integration.
+								</p>
+								<div class="flex gap-2 mb-4">
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">RxJS</span>
+									<span
+										class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">Tailwind</span>
+								</div>
+								<a class="w-full py-3 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm text-center transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group-hover:translate-y-0 translate-y-2"
+									href="#">
+									<span>Visit Site</span>
+									<span class="material-symbols-outlined text-base">arrow_outward</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<button aria-label="Next project"
+						class="absolute -right-5 md:-right-12 top-1/2 -translate-y-1/2 z-20 size-14 flex items-center justify-center rounded-full bg-white shadow-xl text-slate-700 hover:text-primary hover:scale-110 transition-all border border-slate-200 opacity-80 md:opacity-100 group-hover/carousel:opacity-100 focus:opacity-100">
+						<span class="material-symbols-outlined text-3xl">chevron_right</span>
+					</button>
+				</div>
+				<div class="flex justify-center items-center gap-3 mt-4">
+					<button aria-label="Go to project 1"
+						class="size-3.5 rounded-full bg-primary ring-2 ring-primary ring-offset-2 ring-offset-slate-50 transition-all"></button>
+					<button aria-label="Go to project 2"
+						class="size-3.5 rounded-full border-2 border-slate-300 hover:border-primary hover:bg-primary/20 transition-all"></button>
+					<button aria-label="Go to project 3"
+						class="size-3.5 rounded-full border-2 border-slate-300 hover:border-primary hover:bg-primary/20 transition-all"></button>
+					<button aria-label="Go to project 4"
+						class="size-3.5 rounded-full border-2 border-slate-300 hover:border-primary hover:bg-primary/20 transition-all"></button>
+					<button aria-label="Go to project 5"
+						class="size-3.5 rounded-full border-2 border-slate-300 hover:border-primary hover:bg-primary/20 transition-all"></button>
+				</div>
+			</section>
+			<section class="py-10 mb-20 scroll-mt-20" id="contact">
+				<div class="bg-white rounded-lg p-8 md:p-12 border border-slate-200 shadow-xl overflow-hidden relative">
+					<div
+						class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+					</div>
+					<div
+						class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none">
+					</div>
+					<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+						<div class="flex flex-col gap-6 text-left">
+							<div>
+								<h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-4">Let's
+									work together</h2>
+								<p class="text-slate-600 text-lg leading-relaxed">
+									Have a project in mind or need help scaling your Angular application? I'm currently
+									available for freelance projects and consulting.
+								</p>
+							</div>
+							<div class="flex items-center gap-2 text-slate-500 font-medium">
+								<span class="material-symbols-outlined text-primary">schedule</span>
+								<span>Reply time: within 24 hours</span>
+							</div>
+						</div>
+						<div class="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-8 md:gap-y-10 w-full">
+							<a class="group flex flex-col gap-2 items-start" href="mailto:sagar.v@example.com">
+								<div
+									class="h-12 w-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-900 group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-2">
+									<span class="material-symbols-outlined text-2xl">mail</span>
+								</div>
+								<div>
+									<h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Email
+									</h3>
+									<p
+										class="text-base font-bold text-slate-900 group-hover:text-primary transition-colors break-words">
+										sagar.v@example.com</p>
+								</div>
+							</a>
+							<a class="group flex flex-col gap-2 items-start" href="#">
+								<div
+									class="h-12 w-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-900 group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-2">
+									<span class="material-symbols-outlined text-2xl">dataset_linked</span>
+								</div>
+								<div>
+									<h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">LinkedIn
+									</h3>
+									<p
+										class="text-base font-bold text-slate-900 group-hover:text-primary transition-colors">
+										/in/sagarv</p>
+								</div>
+							</a>
+							<a class="group flex flex-col gap-2 items-start" href="#">
+								<div
+									class="h-12 w-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-900 group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-2">
+									<span class="material-symbols-outlined text-2xl">code</span>
+								</div>
+								<div>
+									<h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">GitHub
+									</h3>
+									<p
+										class="text-base font-bold text-slate-900 group-hover:text-primary transition-colors">
+										@sagarv</p>
+								</div>
+							</a>
+							<div class="flex flex-col gap-2 items-start">
+								<div
+									class="h-12 w-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-900 mb-2 cursor-default">
+									<span class="material-symbols-outlined text-2xl">location_on</span>
+								</div>
+								<div>
+									<h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Location
+									</h3>
+									<p class="text-base font-bold text-slate-900">Remote / Worldwide</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class="w-full border-t border-slate-200 bg-white py-8">
+		<div class="max-w-[960px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+			<div class="text-sm text-slate-500">
+				© 2024 Sagar V. All rights reserved.
+			</div>
+			<div class="flex items-center gap-2 text-sm font-medium text-slate-600">
+				<span>Built with</span>
+				<span class="material-symbols-outlined text-primary text-base">bolt</span>
+				<span>and Tailwind CSS</span>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
